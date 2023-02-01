@@ -1,0 +1,44 @@
+.totalMoney {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+
+  margin-left: 10px;
+}
+
+.textBox > p {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray4);
+}
+
+.textBox > span {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray3);
+  margin-top: -15px;
+}
+
+.moneyBox {
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+.moneyBox > span {
+  color: var(--primaryColor);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 769px) {
+  .totalMoney {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

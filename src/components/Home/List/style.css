@@ -1,0 +1,151 @@
+.history {
+  width: 550px;
+  height: 430px;
+
+  margin-top: 100px;
+}
+
+.historyHeader {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyHeader > h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.historyHeader > div > span {
+  margin: auto 5px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.historyHeader > div > span:hover {
+  cursor: pointer;
+
+  background-color: var(--gray4);
+  color: var(--gray1);
+
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.showThis {
+  background-color: var(--primaryColor);
+  color: var(--gray1);
+
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.historyBody {
+  width: 100%;
+  height: 390px;
+}
+
+.emptyBox > p {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--gray3);
+}
+
+.cardShowcase {
+  width: 100%;
+  height: 100%;
+}
+
+.cardList {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  overflow-y: auto;
+}
+
+.viewTransaction {
+  width: 100%;
+  height: 90px;
+
+  border-left: 4px solid transparent;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: -40px;
+  margin-bottom: 30px;
+}
+
+.greenBorder {
+  border-left: 4px solid var(--colorSecondary);
+}
+
+.whiteBorder {
+  border-left: 4px solid var(--gray1);
+}
+
+.mainBox {
+  width: 350px;
+  margin-left: 15px;
+}
+
+.mainBox > p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.mainBox > span {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.secundaryBox {
+  margin-right: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.secundaryBox > span {
+  font-weight: 400;
+  font-size: 13px;
+
+  margin-right: 25px;
+}
+
+.secundaryBox > img:hover {
+  cursor: pointer;
+  filter: invert();
+}
+
+@media (max-width: 769px) {
+  .history {
+    width: 90%;
+    height: 450px;
+  }
+
+  .historyHeader {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .emptyBox > p {
+    width: 100%;
+    margin-left: -30px;
+
+    text-align: center;
+  }
+}

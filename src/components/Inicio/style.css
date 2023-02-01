@@ -1,0 +1,81 @@
+.initialPage {
+  display: flex;
+
+  background-color: var(--gray4);
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv {
+  width: 330px;
+
+  color: var(--gray1);
+  margin-top: 50px;
+}
+
+.mainDiv > h3 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.mainDiv > button {
+  width: 241px;
+  height: 48px;
+
+  background-color: var(--primaryColor);
+  color: var(--gray1);
+
+  border: none;
+  border-radius: 8px;
+
+  margin-top: 45px;
+}
+
+.mainDiv > button:hover {
+  cursor: pointer;
+
+  background-color: var(--primaryLight);
+}
+
+.imgDiv > img {
+  width: 500px;
+  height: 500px;
+
+  margin-left: 50px;
+}
+
+@media (max-width: 769px) {
+  .initialPage {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .mainDiv {
+    width: 300px;
+  }
+
+  .mainDiv > h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+  }
+
+  .mainDiv > button {
+    width: 180px;
+    height: 38px;
+  }
+
+  .imgDiv > img {
+    width: 180px;
+    height: 180px;
+
+    margin: 15px auto 0 auto;
+  }
+}
